@@ -1,12 +1,14 @@
 import React from "react";
-import Pizza from "./Pizza.jsx";
+import Header from "./Header.jsx";
+import Menu from "./Menu.jsx";
+import Footer from "./Footer.jsx";
+
 function App() {
   return (
     <div>
-      <h1> Hell-o</h1>
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Header />
+      <Menu />
+      <Footer />
     </div>
   );
 }
