@@ -12,14 +12,14 @@ function Footer() {
   //   }
 
   return (
-    <footer>
+    <footer classNAme="footer">
       <p>
         {isOpen
           ? `We're open until ${closeHour}:00! Order
         or visit our shop online!`
           : `We are closed, opening at ${openHour}:00!`}
       </p>
-      <button>Order</button>
+      <button className="btn">Order</button>
     </footer>
   );
 }

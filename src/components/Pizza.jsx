@@ -5,9 +5,9 @@ import pizzaData from "../data.js";
 
 function Pizza() {
   return (
-    <div>
+    <div className="pizza">
       <img src="pizzas/focaccia.jpg" alt="Focaccia"></img>
-      <h2>Focaccia</h2>
+      <h3>Focaccia</h3>
       <p>Bread with italian olive oil and rosemary</p>
     </div>
   );

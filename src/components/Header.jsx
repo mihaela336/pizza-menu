@@ -1,7 +1,16 @@
 import React from "react";
 
 function Header() {
-  return <h1>React Pizza Menu</h1>;
+  const inlineStyle = {
+    color: "red",
+    fontSize: "48px",
+    textTransform: "uppercase",
+  };
+  return (
+    <header className="header">
+      <h1>React Pizza Menu</h1>;
+    </header>
+  );
 }
 
 export default Header;

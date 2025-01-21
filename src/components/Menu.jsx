@@ -3,13 +3,15 @@ import Pizza from "./Pizza.jsx";
 
 function Menu() {
   return (
-    <div>
+    <main className="menu">
       <h2> Our Menu</h2>
       <p>Authentic italian pizza</p>
-      <Pizza />
-      <Pizza />
-      <Pizza />
-    </div>
+      <div className="pizzas">
+        <Pizza />
+        <Pizza />
+        <Pizza />
+      </div>
+    </main>
   );
 }
 
