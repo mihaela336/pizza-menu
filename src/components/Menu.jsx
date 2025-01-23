@@ -12,13 +12,13 @@ function Menu() {
 
       <p>Authentic italian pizza</p>
 
-      {numPizzas > 0 && (
+      {numPizzas > 0 ? (
         <ul className="pizzas">
           {pizzaData.map((pizza) => {
             return <Pizza pizzaObj={pizza} key={pizza.name} />;
           })}
         </ul>
-      )}
+      ) : null}
     </main>
   );
 }
