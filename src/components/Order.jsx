@@ -1,10 +1,11 @@
 import React from "react";
 
-function Order(props) {
+function Order({ closeHour, openHour }) {
   return (
     <div className="order">
       <p>
-        We're open until {props.closeHour}:00! Order or visit our shop online!
+        We're open fro {openHour} until {closeHour}:00! Order or visit our shop
+        online!
       </p>
       <button className="btn">Order</button>
     </div>
