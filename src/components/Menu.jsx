@@ -3,8 +3,8 @@ import Pizza from "./Pizza.jsx";
 import pizzaData from "../data.js";
 
 function Menu() {
-  // const pizzas = pizzaData;
-  const pizzas = [];
+  const pizzas = pizzaData;
+  // const pizzas = [];
   const numPizzas = pizzas.length;
   return (
     <main className="menu">
@@ -18,7 +18,9 @@ function Menu() {
             return <Pizza pizzaObj={pizza} key={pizza.name} />;
           })}
         </ul>
-      ) : null}
+      ) : (
+        <p>We're still working on our menu, please come back later</p>
+      )}
     </main>
   );
 }
