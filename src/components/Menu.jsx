@@ -12,7 +12,7 @@ function Menu() {
 
       <p>Authentic italian pizza</p>
 
-      {numPizzas && (
+      {numPizzas > 0 && (
         <ul className="pizzas">
           {pizzaData.map((pizza) => {
             return <Pizza pizzaObj={pizza} key={pizza.name} />;
