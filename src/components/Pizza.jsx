@@ -1,5 +1,4 @@
 import React from "react";
-import pizzaData from "../data.js";
 
 //create component
 
