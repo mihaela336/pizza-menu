@@ -13,13 +13,18 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <p>
-        {isOpen
-          ? `We're open until ${closeHour}:00! Order
-        or visit our shop online!`
-          : `We are closed, opening at ${openHour}:00!`}
-      </p>
-      <button className="btn">Order</button>
+      {isOpen ? (
+        <div className="order">
+          <p>
+            We're open until {closeHour}:00! Order or visit our shop online!
+          </p>
+          <button className="btn">Order</button>
+        </div>
+      ) : (
+        <div className="order">
+          <p>We are closed, opening at {openHour}:00!</p>
+        </div>
+      )}
     </footer>
   );
 }
