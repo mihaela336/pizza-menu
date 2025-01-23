@@ -11,6 +11,12 @@ function Footer() {
   //     alert("Sorry we are closed :(");
   //   }
 
+  //use syntax like this for early return when wanting to return
+  // entire components conditionally
+  //for just some pieces of jsx use ternary
+  // if (!isOpen) return;
+  // <p>We are closed, opening at {openHour}:00!</p>;
+
   return (
     <footer className="footer">
       {isOpen ? (
@@ -21,9 +27,7 @@ function Footer() {
           <button className="btn">Order</button>
         </div>
       ) : (
-        <div className="order">
-          <p>We are closed, opening at {openHour}:00!</p>
-        </div>
+        <p>We are closed, opening at {openHour}:00!</p>
       )}
     </footer>
   );
