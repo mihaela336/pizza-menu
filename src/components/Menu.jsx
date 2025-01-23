@@ -8,21 +8,12 @@ function Menu() {
       <h2> Our Menu</h2>
 
       <p>Authentic italian pizza</p>
-      <div className="pizzas">
-        <div>
-          {pizzaData.map((pizza) => {
-            return (
-              <Pizza
-                name={pizza.name}
-                photoName={pizza.photoName}
-                ingredients={pizza.ingredients}
-                price={pizza.price}
-                soldOut={pizza.soldOut}
-              />
-            );
-          })}
-        </div>
-      </div>
+
+      <ul className="pizzas">
+        {pizzaData.map((pizza) => {
+          return <Pizza pizzaObj={pizza} key={pizza.name} />;
+        })}
+      </ul>
     </main>
   );
 }

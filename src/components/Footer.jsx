@@ -12,7 +12,7 @@ function Footer() {
   //   }
 
   return (
-    <footer classNAme="footer">
+    <footer className="footer">
       <p>
         {isOpen
           ? `We're open until ${closeHour}:00! Order
