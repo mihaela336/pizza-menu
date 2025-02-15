@@ -1,23 +1,20 @@
 import React from "react";
-import Pizza from "./Pizza.jsx";
-import pizzaData from "../data.js";
+import FoodItem from "./FoodItem.jsx";
 
-function MenuSection() {
-  const pizzas = pizzaData;
-  const numPizzas = pizzas.length;
+function MenuSection({ filteredItems }) {
+  const items = filteredItems.items;
+  const numItems = items.length;
+
   return (
     <main className="items">
-      <h2> Pizza</h2>
+      <h2> {filteredItems.category}</h2>
 
-      {numPizzas > 0 ? (
+      {numItems > 0 ? (
         <>
-          <p>
-            Authentic italian pizza. 6 creative dishes to goose from. All from
-            our stone oven, all organic , all delicious
-          </p>
+          <p>{filteredItems.description}</p>
           <ul className="pizzas">
-            {pizzaData.map((pizza) => {
-              return <Pizza pizzaObj={pizza} key={pizza.name} />;
+            {items.map((item) => {
+              return <FoodItem itemObj={item} key={item.id} />;
             })}
           </ul>
         </>
