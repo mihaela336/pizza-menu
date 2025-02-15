@@ -205,7 +205,8 @@ h3 {
   font-size: 2rem;
   font-weight: 500;
   background-color: #32cd32;
-  padding: 1.4rem 3.2rem;
+  margin: 0 5px;
+  padding: 1.4rem 7rem;
   cursor: pointer;
   transition: all 0.2s;
 }

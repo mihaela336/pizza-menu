@@ -6,6 +6,7 @@ import Navbar from "./Navbar.jsx";
 
 function App() {
   const [order, setOrder] = useState([]);
+  const [clear, setClear] = useState(false);
 
   function handleAddItem(name, quantity) {
     const newItem = { name, quantity };
@@ -23,6 +24,12 @@ function App() {
 
     console.log(order);
   }
+
+  function handleClearOrder() {
+    setClear(true);
+    setOrder([]);
+    setClear(false);
+  }
   return (
     <>
       <div className="navbar">
@@ -33,7 +40,7 @@ function App() {
 
       <Menu onAddItem={handleAddItem} />
 
-      <Footer />
+      <Footer onClearOrder={handleClearOrder} />
     </>
   );
 }

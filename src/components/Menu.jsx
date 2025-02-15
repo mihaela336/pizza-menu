@@ -2,7 +2,7 @@ import { useState } from "react";
 import MenuSection from "./MenuSection";
 import menuData from "../data";
 
-const categories = ["Pastas", "Salads", "Pizzas", "Desserts", "Drinks"];
+const categories = ["Pasta", "Salads", "Pizza", "Dessert", "Drinks"];
 
 function Menu({ onAddItem }) {
   const [categoryIndex, setCategoryIndex] = useState(0);

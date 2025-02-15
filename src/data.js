@@ -1,7 +1,7 @@
 const menuData = [
   {
     id: 1,
-    category: "Pastas",
+    category: "Pasta",
     description:
       "Traditional Italian pasta dishes. Made with fresh ingredients, rich sauces, and perfectly cooked pasta.",
     items: [
@@ -57,7 +57,7 @@ const menuData = [
   },
   {
     id: 2,
-    category: "Pizzas",
+    category: "Pizza",
     description:
       "Authentic italian pizza. 6 creative dishes to goose from. All from our stone oven, all organic , all delicious",
     items: [
@@ -171,7 +171,7 @@ const menuData = [
   },
   {
     id: 4,
-    category: "Desserts",
+    category: "Dessert",
     description:
       "Sweetest Italian desserts. From creamy tiramisu to rich chocolate lava cake, each bite is a taste of pure delight.",
     items: [
