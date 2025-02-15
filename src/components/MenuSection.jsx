@@ -1,7 +1,7 @@
 import React from "react";
 import FoodItem from "./FoodItem.jsx";
 
-function MenuSection({ filteredItems }) {
+function MenuSection({ filteredItems, onAddItem }) {
   const items = filteredItems.items;
   const numItems = items.length;
 
@@ -14,7 +14,9 @@ function MenuSection({ filteredItems }) {
           <p>{filteredItems.description}</p>
           <ul className="items">
             {items.map((item) => {
-              return <FoodItem itemObj={item} key={item.id} />;
+              return (
+                <FoodItem itemObj={item} key={item.id} onAddItem={onAddItem} />
+              );
             })}
           </ul>
         </>

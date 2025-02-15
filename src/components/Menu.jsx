@@ -4,7 +4,7 @@ import menuData from "../data";
 
 const categories = ["Pastas", "Salads", "Pizzas", "Desserts", "Drinks"];
 
-function Menu() {
+function Menu({ onAddItem }) {
   const [categoryIndex, setCategoryIndex] = useState(0);
 
   function handlePrev() {
@@ -28,14 +28,14 @@ function Menu() {
 
   return (
     <div className="container">
-      <div onClick={handlePrev}>
+      <div className="slider" onClick={handlePrev}>
         <h1> &lt;</h1>
       </div>
       <div className="menu-section">
-        <MenuSection filteredItems={filteredItems} />
+        <MenuSection filteredItems={filteredItems} onAddItem={onAddItem} />
       </div>
 
-      <div onClick={handleNext}>
+      <div className="slider" onClick={handleNext}>
         <h1> &gt; </h1>
       </div>
     </div>

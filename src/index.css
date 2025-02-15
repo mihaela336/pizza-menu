@@ -18,7 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #e0e0e0;
   font-weight: 200;
-  border-bottom: 1.6rem solid #32cd32;
+  border-bottom: 1.4rem solid #32cd32;
   min-height: 100vh;
   padding: 3.2rem;
   padding-bottom: 6rem;
@@ -81,9 +81,13 @@ h3 {
   font-weight: 300;
 }
 
+.slider {
+  border-radius: 10px;
+}
+
 .menu-section {
-  max-width: 80rem;
-  margin: 50px auto 10%;
+  max-width: 90rem;
+  margin: 40px auto;
 
   display: flex;
   flex-direction: column;
@@ -124,18 +128,24 @@ h3 {
   text-align: start;
 }
 
-.pizza {
+.item {
   display: flex;
-  gap: 3.2rem;
+  gap: 1.4rem;
+  padding: 15px;
+  border-radius: 10px;
+}
+.slider:hover,
+.item:hover {
+  background-color: #333333;
 }
 
-.pizza img {
+.item img {
   width: 12rem;
   aspect-ratio: 1;
   align-self: start;
 }
 
-.pizza div {
+.item div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -143,28 +153,32 @@ h3 {
   padding: 0.4rem 0;
 }
 
-.pizza h3 {
+.item h3 {
+  display: flex;
+  align-items: center; /* Aligns text and span on the same line */
+  justify-content: space-between; /* Pushes them apart */
+  width: 100%;
   font-size: 2rem;
   font-weight: 400;
 }
 
-.pizza p {
+.item p {
   font-size: 1.6rem;
   font-weight: 300;
   font-style: italic;
   margin-bottom: auto;
 }
 
-.pizza span {
+.item span {
   display: block;
   font-size: 1.6rem;
 }
 
-.pizza.sold-out {
+.item.sold-out {
   color: #888;
 }
 
-.pizza.sold-out img {
+.item.sold-out img {
   filter: grayscale();
   opacity: 0.8;
 }
