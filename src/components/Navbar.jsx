@@ -1,9 +1,9 @@
 function Navbar() {
   return (
     <div>
-      <a href="">Account</a>
-      <a href="">Cart</a>
-      <a href="">Log out</a>
+      <p>Account</p>
+      <p>Order</p>
+      <p>Log out</p>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Order from "./Order";
+import ShopInfo from "./ShopInfo";
 function Footer() {
   const hour = new Date().getHours();
   const openHour = 12;
@@ -21,7 +21,7 @@ function Footer() {
   return (
     <footer className="footer">
       {isOpen ? (
-        <Order closeHour={closeHour} openHour={openHour} />
+        <ShopInfo closeHour={closeHour} openHour={openHour} />
       ) : (
         <p>We are closed, opening at {openHour}:00!</p>
       )}

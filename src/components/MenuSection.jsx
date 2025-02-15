@@ -6,13 +6,13 @@ function MenuSection({ filteredItems }) {
   const numItems = items.length;
 
   return (
-    <main className="items">
+    <main className="section-headder">
       <h2> {filteredItems.category}</h2>
 
       {numItems > 0 ? (
         <>
           <p>{filteredItems.description}</p>
-          <ul className="pizzas">
+          <ul className="items">
             {items.map((item) => {
               return <FoodItem itemObj={item} key={item.id} />;
             })}

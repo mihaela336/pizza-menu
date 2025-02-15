@@ -1,6 +1,62 @@
 const menuData = [
   {
     id: 1,
+    category: "Pastas",
+    description:
+      "Traditional Italian pasta dishes. Made with fresh ingredients, rich sauces, and perfectly cooked pasta.",
+    items: [
+      {
+        id: 1,
+        name: "Spaghetti Carbonara",
+        ingredients: "Spaghetti, eggs, pancetta, pecorino cheese, black pepper",
+        price: 14,
+        photoName: "foodImg/carbonara.jpg",
+        soldOut: false,
+      },
+      {
+        id: 2,
+        name: "Penne Arrabbiata",
+        ingredients: "Penne, tomato sauce, garlic, red chili, parsley",
+        price: 12,
+        photoName: "foodImg/arrabbiata.jpg",
+        soldOut: false,
+      },
+      {
+        id: 3,
+        name: "Lasagna",
+        ingredients: "Layered pasta, ricotta cheese, ground beef, tomato sauce",
+        price: 16,
+        photoName: "foodImg/lasagna.jpg",
+        soldOut: false,
+      },
+      {
+        id: 4,
+        name: "Fettuccine Alfredo",
+        ingredients: "Fettuccine, cream sauce, parmesan cheese",
+        price: 15,
+        photoName: "foodImg/alfredo.jpg",
+        soldOut: false,
+      },
+      {
+        id: 5,
+        name: "Gnocchi Pesto",
+        ingredients: "Potato gnocchi, basil pesto, parmesan cheese",
+        price: 13,
+        photoName: "foodImg/gnocchi.jpg",
+        soldOut: false,
+      },
+      {
+        id: 6,
+        name: "Rigatoni Bolognese",
+        ingredients: "Rigatoni, slow-cooked beef ragu, parmesan",
+        price: 17,
+        photoName: "foodImg/bolognese.jpg",
+        soldOut: false,
+      },
+    ],
+  },
+  {
+    id: 2,
     category: "Pizzas",
     description:
       "Authentic italian pizza. 6 creative dishes to goose from. All from our stone oven, all organic , all delicious",
@@ -58,7 +114,7 @@ const menuData = [
   },
 
   {
-    id: 2,
+    id: 3,
     category: "Salads",
     description:
       "Fresh and healthy salads. A mix of crisp greens, premium toppings, and house-made dressings. Perfect for a light yet satisfying meal.",
@@ -109,62 +165,6 @@ const menuData = [
         ingredients: "Tuna, lettuce, egg, olives, house dressing",
         price: 12,
         photoName: "foodImg/tuna.jpg",
-        soldOut: false,
-      },
-    ],
-  },
-  {
-    id: 3,
-    category: "Pastas",
-    description:
-      "Traditional Italian pasta dishes. Made with fresh ingredients, rich sauces, and perfectly cooked pasta. Comfort food at its finest.",
-    items: [
-      {
-        id: 1,
-        name: "Spaghetti Carbonara",
-        ingredients: "Spaghetti, eggs, pancetta, pecorino cheese, black pepper",
-        price: 14,
-        photoName: "foodImg/carbonara.jpg",
-        soldOut: false,
-      },
-      {
-        id: 2,
-        name: "Penne Arrabbiata",
-        ingredients: "Penne, tomato sauce, garlic, red chili, parsley",
-        price: 12,
-        photoName: "foodImg/arrabbiata.jpg",
-        soldOut: false,
-      },
-      {
-        id: 3,
-        name: "Lasagna",
-        ingredients: "Layered pasta, ricotta cheese, ground beef, tomato sauce",
-        price: 16,
-        photoName: "foodImg/lasagna.jpg",
-        soldOut: false,
-      },
-      {
-        id: 4,
-        name: "Fettuccine Alfredo",
-        ingredients: "Fettuccine, cream sauce, parmesan cheese",
-        price: 15,
-        photoName: "foodImg/alfredo.jpg",
-        soldOut: false,
-      },
-      {
-        id: 5,
-        name: "Gnocchi Pesto",
-        ingredients: "Potato gnocchi, basil pesto, parmesan cheese",
-        price: 13,
-        photoName: "foodImg/gnocchi.jpg",
-        soldOut: false,
-      },
-      {
-        id: 6,
-        name: "Rigatoni Bolognese",
-        ingredients: "Rigatoni, slow-cooked beef ragu, parmesan",
-        price: 17,
-        photoName: "foodImg/bolognese.jpg",
         soldOut: false,
       },
     ],
