@@ -237,7 +237,7 @@ const menuData = [
         name: "Coca-Cola",
         ingredients: "Carbonated soft drink",
         price: 3,
-        photoName: "drinks/coca-cola.jpg",
+        photoName: "foodImg/coca-cola.jpg",
         soldOut: false,
       },
       {
@@ -245,7 +245,7 @@ const menuData = [
         name: "Red Wine",
         ingredients: "Glass of Italian red wine",
         price: 7,
-        photoName: "drinks/red-wine.jpg",
+        photoName: "foodImg/red-wine.jpg",
         soldOut: false,
       },
       {
@@ -253,7 +253,7 @@ const menuData = [
         name: "White Wine",
         ingredients: "Glass of Italian white wine",
         price: 7,
-        photoName: "drinks/white-wine.jpg",
+        photoName: "foodImg/white-wine.jpg",
         soldOut: false,
       },
       {
@@ -261,7 +261,7 @@ const menuData = [
         name: "Lemonade",
         ingredients: "Freshly squeezed lemon juice, sugar, water",
         price: 4,
-        photoName: "drinks/lemonade.jpg",
+        photoName: "foodImg/lemonade.jpg",
         soldOut: false,
       },
       {
@@ -269,7 +269,7 @@ const menuData = [
         name: "Espresso",
         ingredients: "Strong Italian coffee",
         price: 3,
-        photoName: "drinks/espresso.jpg",
+        photoName: "foodImg/espresso.jpg",
         soldOut: false,
       },
       {
@@ -277,7 +277,7 @@ const menuData = [
         name: "Iced Tea",
         ingredients: "Black tea, lemon, ice",
         price: 4,
-        photoName: "drinks/iced-tea.jpg",
+        photoName: "foodImg/iced-tea.jpg",
         soldOut: false,
       },
     ],
